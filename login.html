@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin - Gundih Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);">
+  
+  <div id="toastContainer"></div>
+
+  <div class="card" style="width: 100%; max-width: 400px; padding: var(--sp-xl); margin: var(--sp-md);">
+    <div class="text-center" style="margin-bottom: var(--sp-lg);">
+      <div class="category-icon" style="background: rgba(10, 51, 112, 0.1); color: var(--primary);">
+        <span class="material-symbols-outlined" style="font-size: 2rem;">storefront</span>
+      </div>
+      <h2>Gundih Digital</h2>
+      <p class="text-muted">Portal Admin UMKM Desa</p>
+    </div>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Masukkan username" required>
+      </div>
+
+      <div class="form-group" style="position: relative;">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan password" required>
+        <button type="button" id="togglePassword" style="position: absolute; right: 10px; top: 38px; background: none; border: none; cursor: pointer; color: var(--text-muted);">
+          <span class="material-symbols-outlined">visibility</span>
+        </button>
+      </div>
+      
+      <div id="loginErrorMsg" class="error-msg" style="margin-bottom: var(--sp-md); text-align: center;"></div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%;">
+        Login <span class="material-symbols-outlined">login</span>
+      </button>
+    </form>
+
+    <div class="text-center" style="margin-top: var(--sp-lg);">
+      <a href="index.html" style="color: var(--primary); font-size: 0.875rem;">&larr; Kembali ke Beranda</a>
+    </div>
+  </div>
+
+  <script src="js/user.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

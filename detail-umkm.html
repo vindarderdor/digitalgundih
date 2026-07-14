@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail UMKM - Gundih Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="pageLoader" class="page-loader"><div class="spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="material-symbols-outlined">storefront</span>
+        Gundih Digital
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="umkm.html" class="nav-link">Daftar UMKM</a></li>
+        <li><a href="produk.html" class="nav-link">Produk</a></li>
+        <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" title="Login Admin">
+          <span class="material-symbols-outlined">account_circle</span> Admin
+        </a>
+        <button id="hamburger" class="hamburger">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="nav-link">Beranda</a>
+    <a href="umkm.html" class="nav-link">Daftar UMKM</a>
+    <a href="produk.html" class="nav-link">Produk</a>
+    <a href="dokumentasi.html" class="nav-link">Dokumentasi</a>
+    <a href="login.html" class="nav-link text-primary">Login Admin</a>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <a href="umkm.html" style="display: inline-flex; align-items: center; gap: 5px; color: var(--primary); font-weight: 600; margin-bottom: var(--sp-lg);">
+        <span class="material-symbols-outlined">arrow_back</span> Kembali ke Direktori
+      </a>
+      
+      <div id="detailUmkmContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 Gundih Digital. All rights reserved. Didukung oleh KKN BBK 8 UNAIR.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/database.js"></script>
+  <script src="js/umkm.js"></script>
+  <script src="js/user.js"></script>
+</body>
+</html>

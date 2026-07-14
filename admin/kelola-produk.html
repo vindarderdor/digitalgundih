@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Produk - Admin Gundih Digital</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <!-- Protect page -->
+  <script src="../js/auth.js"></script>
+  <script>checkAuth();</script>
+</head>
+
+<body class="admin-layout">
+  <div id="toastContainer"></div>
+
+  <!-- Sidebar -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <div class="sidebar-header">
+      <span class="material-symbols-outlined" style="margin-right: 8px;">storefront</span> Admin Gundih
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link">
+        <span class="material-symbols-outlined">dashboard</span> Dashboard
+      </a>
+      <a href="kelola-umkm.html" class="sidebar-link">
+        <span class="material-symbols-outlined">groups</span> Kelola UMKM
+      </a>
+      <a href="kelola-produk.html" class="sidebar-link active">
+        <span class="material-symbols-outlined">inventory_2</span> Kelola Produk
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="btn-logout">
+        <span class="material-symbols-outlined">logout</span> Logout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <button id="sidebarToggle" class="sidebar-toggle">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="topbar-user">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span>Administrator</span>
+      </div>
+    </header>
+
+    <main class="admin-content">
+      <div class="page-header">
+        <div>
+          <h2>Data Produk</h2>
+          <p class="text-muted">Kelola data produk dari mitra UMKM</p>
+        </div>
+        <button class="btn btn-primary" data-modal-target="modalTambahProduk">
+          <span class="material-symbols-outlined">add</span> Tambah Produk
+        </button>
+      </div>
+
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Produk</th>
+              <th>UMKM</th>
+              <th>Kategori</th>
+              <th>Harga</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tabelProduk">
+            <!-- Rendered via JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal Tambah Produk -->
+  <div class="modal-overlay" id="modalTambahProduk">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Tambah Data Produk</h3>
+        <button class="btn-close" data-modal-close>&times;</button>
+      </div>
+      <form id="formTambahProduk">
+        <input type="hidden" id="produkUmkmId">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Pilih UMKM (Pemilik Produk)</label>
+            <select id="produkUmkmSelect" class="form-control" required>
+              <option value="">-- Pilih UMKM --</option>
+              <!-- Populated via JS -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nama Produk Unggulan</label>
+            <input type="text" id="produkNama" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Harga (Rp)</label>
+            <input type="number" id="produkHarga" class="form-control" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" data-modal-close>Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan Produk</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/database.js"></script>
+  <script src="../js/user.js"></script> <!-- For Toast -->
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

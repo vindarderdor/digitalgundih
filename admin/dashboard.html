@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Gundih Digital</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <!-- Protect page -->
+  <script src="../js/auth.js"></script>
+  <script>checkAuth();</script>
+</head>
+
+<body class="admin-layout">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <div class="sidebar-header">
+      <span class="material-symbols-outlined" style="margin-right: 8px;">storefront</span> Admin Gundih
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="sidebar-link active">
+        <span class="material-symbols-outlined">dashboard</span> Dashboard
+      </a>
+      <a href="kelola-umkm.html" class="sidebar-link">
+        <span class="material-symbols-outlined">groups</span> Kelola UMKM
+      </a>
+      <a href="kelola-produk.html" class="sidebar-link">
+        <span class="material-symbols-outlined">inventory_2</span> Kelola Produk
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="btn-logout">
+        <span class="material-symbols-outlined">logout</span> Logout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <button id="sidebarToggle" class="sidebar-toggle">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="topbar-user">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span>Administrator</span>
+      </div>
+    </header>
+
+    <main class="admin-content">
+      <div class="page-header">
+        <div>
+          <h2>Dashboard Overview</h2>
+          <p class="text-muted">Ringkasan data UMKM Desa Gundih</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <div class="stat-card">
+          <div class="stat-icon material-symbols-outlined">storefront</div>
+          <div class="stat-value">52</div>
+          <div class="stat-label">Total UMKM</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon material-symbols-outlined">inventory_2</div>
+          <div class="stat-value">124</div>
+          <div class="stat-label">Total Produk</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon material-symbols-outlined">visibility</div>
+          <div class="stat-value">8.5k</div>
+          <div class="stat-label">Kunjungan Bulan Ini</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

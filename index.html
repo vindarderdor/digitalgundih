@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gundih Digital - Digitalisasi UMKM Desa Modern</title>
+  <meta name="description" content="Portal UMKM Desa Gundih. Temukan berbagai produk unggulan lokal.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="pageLoader" class="page-loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="material-symbols-outlined">storefront</span>
+        Gundih Digital
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li><a href="umkm.html" class="nav-link">Daftar UMKM</a></li>
+        <li><a href="produk.html" class="nav-link">Produk</a></li>
+        <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" title="Login Admin">
+          <span class="material-symbols-outlined">account_circle</span> Admin
+        </a>
+        <button id="hamburger" class="hamburger">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="nav-link active">Beranda</a>
+    <a href="umkm.html" class="nav-link">Daftar UMKM</a>
+    <a href="produk.html" class="nav-link">Produk</a>
+    <a href="dokumentasi.html" class="nav-link">Dokumentasi</a>
+    <a href="login.html" class="nav-link text-primary">Login Admin</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Digitalisasi <br><span class="text-secondary">UMKM Desa Modern</span></h1>
+          <p>Mendukung pertumbuhan ekonomi lokal melalui inovasi digital. Temukan berbagai produk dan jasa unggulan dari para pengrajin dan pelaku usaha Desa Gundih.</p>
+          <div class="flex gap-md">
+            <a href="umkm.html" class="btn btn-primary">Jelajahi UMKM</a>
+            <a href="#kategori" class="btn btn-outline">Lihat Kategori</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtXb_nzVf5czrWj4Em_fLizLXTKoS3rQ8dsS52VO1IdupxUg7AzR0QdBT2oZ-nNzNW0PlM98WMjN8HEXAIFRP-hcpMxIDEeuyKK6OVCqqZXQ8e0KJ29ka0ttjhY5aP7Bs_SHyCo2i3ZA0OY30KeY5384Cw5njgX1uAzYnTj65WWNNx6cjaHGmXcN2uT2taYeTcfULPICiU4IRqsL3x4XAEzJOWMzNqGYLU65uAAAI6SDshqoJlbb8Nlw" alt="Ilustrasi UMKM Digital">
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon material-symbols-outlined">trending_up</div>
+        <div class="stat-value">120%</div>
+        <div class="stat-label">Pertumbuhan per Tahun</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon material-symbols-outlined">groups</div>
+        <div class="stat-value">50+</div>
+        <div class="stat-label">Mitra Aktif UMKM</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon material-symbols-outlined">shopping_cart</div>
+        <div class="stat-value">2.5k+</div>
+        <div class="stat-label">Transaksi per Bulan</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon material-symbols-outlined">verified</div>
+        <div class="stat-label">Didukung KKN BBK 8 UNAIR</div>
+      </div>
+    </div>
+
+    <!-- Kategori -->
+    <section id="kategori" class="section">
+      <div class="container">
+        <div class="flex justify-between items-center" style="margin-bottom: var(--sp-xl);">
+          <div>
+            <h2>Kategori Pilihan</h2>
+            <p class="text-muted">Jelajahi produk lokal berdasarkan kategori</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-4">
+          <a href="umkm.html" class="category-card">
+            <div class="category-icon"><span class="material-symbols-outlined" style="font-size: 2rem;">restaurant</span></div>
+            <h4>Kuliner</h4>
+          </a>
+          <a href="umkm.html" class="category-card">
+            <div class="category-icon"><span class="material-symbols-outlined" style="font-size: 2rem;">apparel</span></div>
+            <h4>Fashion</h4>
+          </a>
+          <a href="umkm.html" class="category-card">
+            <div class="category-icon"><span class="material-symbols-outlined" style="font-size: 2rem;">brush</span></div>
+            <h4>Kerajinan</h4>
+          </a>
+          <a href="umkm.html" class="category-card">
+            <div class="category-icon"><span class="material-symbols-outlined" style="font-size: 2rem;">handyman</span></div>
+            <h4>Jasa</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--sp-xl);">
+          <h2>Produk Unggulan</h2>
+          <p class="text-muted">Karya terbaik dari para pelaku usaha lokal Gundih</p>
+        </div>
+        <div class="grid grid-cols-3">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Fashion</span>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc7FsB9POJkpFdYC6MJCX8R4AqY2BlOVY08PhzP4_RMBqaigih-jvo4wv0-VFS1BdoqI0aKuH0DTH44_86o27PYX6lItJt_lNqz_hsx9dvd6IRSdYlmaD3viTSXnUTwd3T0fx6bwnbmYB5uEUpx2wT1W1am1tKZmg8XD0fvgei0rzFScqSBbbPxDH-kHzBuCqnv4WG6ov2gdkWjyT1kl4_zy6-zuchEyCsHh5YmsTAXxKpBMq8nws-kQ" alt="Batik Tulis Gundih">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Batik Tulis Gundih</h3>
+              <p class="card-desc">Batik tulis otentik dengan motif khas desa dan pewarna alami berkelanjutan.</p>
+              <div class="card-footer">
+                <span class="card-price">Rp 250.000</span>
+                <a href="produk.html" class="btn-icon"><span class="material-symbols-outlined">shopping_cart</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Kuliner</span>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYwcqGS-SisJVtlOQKcrgeN1y648HRkoiKE9ZRh_Sg9W_ZvU1yPpXXJa_P5j3963VrKRFUUo7GldpHBjdSXQJLc-M8-5FOXD6qVvJyql6r5t3sRZIjyg4DhGwnY_jMKbjw7HFEZ5Xqbsx1x5L0uzoKhOjEprEIjiMAuVEzT42a3VVuFYydHH72Ln9Ej5-h8yBNDKSKvG2HNS-YdOQ-z7TvFTk6QW8bb1aeq1CTo_-ebMpwjNJ9NbvK0A" alt="Jajanan Tradisional">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Jajanan Tradisional</h3>
+              <p class="card-desc">Beragam kue dan jajanan tradisional dari Dapur Mak Gundih.</p>
+              <div class="card-footer">
+                <span class="card-price">Rp 15.000</span>
+                <a href="produk.html" class="btn-icon"><span class="material-symbols-outlined">shopping_cart</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Kerajinan</span>
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHp1-YQrPZbJu3LTuJqjuOQURXkZYRMoy9tpgoNWZUctQr7Ef6HuHItDqTjRWMULfwmhvsh4v0OIKnk3ondUdXsebETcK6nseyGwSmB_UcQ4pq7OyssZlAYNjUJw-0MGPvNRsaxsDbyF0Io1Fg9IFHqwUU3DYdDSbc06knJDYofoOmSVDeiqpE9pL5orVDhziDh7LAIBtfDgIHBuvUv41ef2ZNS2Jt5Bz9Jk9r071_Ht5A9QaJwXInmg" alt="Ukiran Kayu">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Ukiran Kayu Lestari</h3>
+              <p class="card-desc">Dekorasi ramah lingkungan yang diukir dari kayu mahoni pilihan.</p>
+              <div class="card-footer">
+                <span class="card-price">Rp 120.000</span>
+                <a href="produk.html" class="btn-icon"><span class="material-symbols-outlined">shopping_cart</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="nav-brand" style="color: white; margin-bottom: var(--sp-md); display: inline-flex;">
+            <span class="material-symbols-outlined">storefront</span>
+            Gundih Digital
+          </a>
+          <p style="color: #a0aec0;">Portal digital terpusat untuk UMKM Desa Gundih. Mendukung pertumbuhan pengusaha lokal dengan teknologi modern.</p>
+        </div>
+        <div>
+          <h4>Menu Utama</h4>
+          <ul>
+            <li><a href="index.html" class="footer-link">Beranda</a></li>
+            <li><a href="umkm.html" class="footer-link">Daftar UMKM</a></li>
+            <li><a href="produk.html" class="footer-link">Produk</a></li>
+            <li><a href="dokumentasi.html" class="footer-link">Dokumentasi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="umkm.html" class="footer-link">Kuliner</a></li>
+            <li><a href="umkm.html" class="footer-link">Fashion</a></li>
+            <li><a href="umkm.html" class="footer-link">Kerajinan</a></li>
+            <li><a href="umkm.html" class="footer-link">Jasa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Admin Portal</h4>
+          <ul>
+            <li><a href="login.html" class="footer-link">Login Administrator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gundih Digital. All rights reserved. Didukung oleh KKN BBK 8 UNAIR.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/user.js"></script>
+</body>
+</html>
